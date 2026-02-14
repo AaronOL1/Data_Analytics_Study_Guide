@@ -1,4 +1,4 @@
-# 🏫 CURSO CEC - CLASE 01: Elementos de una Base de Datos
+# 🏫 BASES DE DATOS RELACIONALES - CLASE 01: Elementos de una Base de Datos
 **Tema:** Teoría sobre Bases de Datos Relacionales
 **Autor:** Aaron Olmedo
 
