@@ -38,11 +38,6 @@ Documentación de mi proceso de estudio para el examen PL-300.
 * **Modelado de Datos:** La joya de la corona. Entendiendo el **Esquema en Estrella** (Star Schema) y Cardinalidad.
 * **DAX:** Fórmulas esenciales (`CALCULATE`, `FILTER`) explicadas con lógica, no de memoria.
 * **Visualización:** Principios de diseño y narración de datos (Storytelling).
-
-### ☁️ [03_Fabric_DP600](./03_Fabric_DP600) *(Próximamente)*
-*Ingeniería de Datos en la Nube.*
-Futura sección dedicada a Microsoft Fabric y la ingeniería de datos moderna.
-
 ---
 
 ## 🧠 Filosofía de Estudio
