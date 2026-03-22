@@ -3,7 +3,6 @@
 **Autor:** Aaron Olmedo
 
 ---
-
 ## 🏗️ Estructura Básica
 
 Para hacerlo sencillo de entender, los elementos de las bases de datos relacionales tienen jerarquías. 
