@@ -17,3 +17,18 @@ Existen varios tipos de JOINs, pero el más usado es el `INNER JOIN`.
 * Si un cliente está en la tabla `Clientes` pero NO tiene compras en la tabla `Ventas`, el `INNER JOIN` lo ignora y no lo muestra en el resultado final.
 
 > **💡 Tip de Analista:** Cuando unes tablas, es muy común usar **Alias** en el nombre de las tablas (ej. `Ventas v`, `Clientes c`) para no tener que escribir el nombre completo cada vez que llamas a una columna.
+
+
+# ⬅️ CLASE 08: Recuperando datos perdidos (LEFT JOIN y RIGHT JOIN)
+**Tema:** Qué hacer cuando las tablas no coinciden perfectamente.
+
+El `INNER JOIN` es genial, pero a veces es demasiado estricto porque elimina todo lo que no cruza. ¿Qué pasa si queremos ver TODAS nuestras ventas, incluso si la sucursal no tiene un gerente asignado en el sistema?
+
+## 1. LEFT JOIN (La prioridad a la izquierda)
+* Trae **TODOS** los registros de la "Tabla A" (la primera que escribes en el `FROM`).
+* Busca coincidencias en la "Tabla B". Si las encuentra, pega los datos.
+* Si **NO** las encuentra, no borra la fila, simplemente rellena los espacios vacíos con el valor `NULL`.
+
+## 2. RIGHT JOIN y FULL OUTER JOIN
+* **`RIGHT JOIN`**: Es exactamente lo mismo, pero le da prioridad a la "Tabla B". Trae todos los gerentes, incluso si no tienen ventas.
+* **`FULL OUTER JOIN`**: Trae absolutamente TODO de ambas tablas, cruzando lo que pueda y poniendo `NULL` en todo lo demás. (Se usa poco por su alto consumo de memoria).
