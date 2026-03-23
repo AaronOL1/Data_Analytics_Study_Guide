@@ -26,3 +26,15 @@ El orden estricto que exige SQL cuando usamos todos los comandos juntos es:
 4. `GROUP BY`
 5. `HAVING`
 6. `ORDER BY`
+
+Ya sabemos agrupar, pero ¿qué pasa si queremos filtrar esos grupos? Aquí es donde muchos analistas junior se equivocan intentando usar el `WHERE`.
+
+## 1. La diferencia vital: WHERE vs HAVING
+Ambos sirven para filtrar, pero actúan en momentos diferentes del motor de SQL:
+* **`WHERE`**: Filtra **filas individuales** ANTES de que se agrupen. (Ej. Solo ventas del 2023). No permite funciones matemáticas.
+* **`HAVING`**: Filtra **los grupos ya creados** DESPUÉS del `GROUP BY`. (Ej. Solo las sucursales cuya suma total de ventas supere los $10,000).
+
+## 2. ORDER BY (El toque final)
+Un reporte no sirve si está desordenado. `ORDER BY` siempre es la **última línea** de tu consulta SQL.
+* `ASC`: Ascendente (De A-Z, o de menor a mayor). Es el valor por defecto.
+* `DESC`: Descendente (De Z-A, o de mayor a menor). Muy usado para ver los "Top 5" o "Top 10" de ventas.
